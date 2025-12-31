@@ -26,6 +26,9 @@ internal interface RemoteDao {
     @Query("DELETE FROM remotes WHERE id = :id")
     suspend fun deleteById(id: String)
 
+    @Query("DELETE FROM remote_commands WHERE remoteId = :id")
+    suspend fun deleteCommandsByRemoteId(id: String)
+
     @Upsert
     suspend fun save(vararg remote: RemoteEntity)
 

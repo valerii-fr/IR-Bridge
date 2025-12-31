@@ -11,6 +11,7 @@ import android.bluetooth.BluetoothProfile
 import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanResult
 import android.content.Context
+import android.os.Build
 import android.util.Log
 import androidx.annotation.RequiresPermission
 import dev.nordix.irbridge.ble.domain.NBleClient
@@ -266,7 +267,6 @@ internal class NBleClientImpl(
                         }
                         _isConnected.value = true
                         gatt.requestMtu(247)
-                        gatt.discoverServices()
                     }
                     BluetoothProfile.STATE_DISCONNECTED -> {
                         // Закрываем поток
@@ -274,6 +274,10 @@ internal class NBleClientImpl(
                         _isConnected.value = false
                     }
                 }
+            }
+
+            override fun onMtuChanged(gatt: BluetoothGatt?, mtu: Int, status: Int) {
+                gatt?.discoverServices()
             }
 
             @Suppress("ReturnCount")
@@ -306,9 +310,14 @@ internal class NBleClientImpl(
                     return
                 }
 
-                cccd.value = BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
-                val ok = gatt.writeDescriptor(cccd)
-                if (!ok) {
+                val status = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    gatt.writeDescriptor(cccd, BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE)
+                } else {
+                    cccd.value = BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
+                    if (gatt.writeDescriptor(cccd)) BluetoothGatt.GATT_SUCCESS else BluetoothGatt.GATT_FAILURE
+                }
+
+                if (status != BluetoothGatt.GATT_SUCCESS) {
                     close(IllegalStateException("writeDescriptor(CCCD) returned false"))
                     return
                 }
@@ -326,6 +335,8 @@ internal class NBleClientImpl(
                     } else {
                         close(IllegalStateException("CCCD write failed status=$status"))
                     }
+                } else {
+                    Log.d(TAG, "Unexpected descriptor write status=$status")
                 }
             }
 
@@ -334,10 +345,20 @@ internal class NBleClientImpl(
                 characteristic: BluetoothGattCharacteristic,
                 value: ByteArray
             ) {
+                handleNotify(characteristic, value)
+            }
+
+            override fun onCharacteristicChanged(gatt: BluetoothGatt, characteristic: BluetoothGattCharacteristic) {
+                val value = characteristic.value ?: return
+                handleNotify(characteristic, value)
+            }
+
+            private fun handleNotify(characteristic: BluetoothGattCharacteristic, value: ByteArray) {
                 if (characteristic.uuid == notifyCharUuid) {
                     onIrNotify(value)?.let { trySend(it).isSuccess }
                 }
             }
+
         }
 
         // autoConnect=false: ожидаем быстрый connect (для твоего сценария “подключиться и слушать”)
@@ -350,6 +371,7 @@ internal class NBleClientImpl(
         awaitClose {
             closeActiveGatt()
         }
+
     }
 
     @RequiresPermission(Manifest.permission.BLUETOOTH_CONNECT)

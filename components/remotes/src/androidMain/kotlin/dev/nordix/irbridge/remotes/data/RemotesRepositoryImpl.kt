@@ -23,6 +23,7 @@ internal class RemotesRepositoryImpl(
     override suspend fun save(vararg remote: Remote) {
         remote.forEach { r ->
             dao.save(r.toEntity())
+            dao.deleteCommandsByRemoteId(r.id.value)
             dao.save(*r.commands.map { c -> c.toEntity(r.id) }.toTypedArray())
         }
     }
