@@ -56,6 +56,7 @@ internal class NBleClientImpl(
      * Возвращает собранный кадр длительностей (микросекунды), когда приходит END.
      * Иначе возвращает null.
      */
+    @Suppress("ReturnCount", "NestedBlockDepth", "LongMethod")
     private fun onIrNotify(bytes: ByteArray): IntArray? {
         if (bytes.isEmpty()) return null
 

@@ -9,6 +9,7 @@ import android.hardware.ConsumerIrManager
  * durationsUs: [on0, off0, on1, off1, ...] в микросекундах.
  * carrierFrequencyHz: обычно 38000 (38 kHz).
  */
+@Suppress("ComplexCondition")
 internal fun Context.transmitIrFrame(
     durationsUs: IntArray,
     carrierFrequencyHz: Int = 38_000
