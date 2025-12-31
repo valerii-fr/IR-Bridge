@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    <string name="save_new_command">Salva nuovo comando</string>
+    <string name="name">Nome</string>
+    <string name="description">Descrizione</string>
+    <string name="received_packet">Pacchetto ricevuto</string>
+    <string name="time">Tempo</string>
+    <string name="durations">Durate %s</string>
+    <string name="send_packet">Invia pacchetto</string>
+    <string name="verify">Verifica che il comando sia riconosciuto dal dispositivo</string>
+    <string name="go">VAI</string>
+    <string name="save_command">Salva comando</string>
+    <string name="save_command_sub">Salva comando in questo telecomando</string>
+    <string name="received">Ricevuto</string>
+    <string name="clear_received">Svuota cache pacchetti ricevuti</string>
+    <string name="clear">Svuota</string>
+    <string name="choose_color">Scegli colore</string>
+    <string name="add_remote">Aggiungi telecomando</string>
+    <string name="edit_remote">Modifica %s</string>
+    <string name="save_err_no_commands">Impossibile salvare senza nome o comandi</string>
+    <string name="awaiting_ir">In attesa di comandi IR</string>
+    <string name="searching_ble">Ricerca ricevitore IR BLE…</string>
+    <string name="searching_ble_sub">Il ricevitore IR BLE non è connesso ma è necessario per intercettare i comandi IR</string>
+    <string name="delete_remote">Elimina telecomando</string>
+    <string name="show_commands">Mostra comandi</string>
+    <string name="hide_commands">Nascondi comandi</string>
+    <string name="delete_s_question">Eliminare %s?</string>
+    <string name="delete_s_question_sub">Questa azione non può essere annullata!</string>
+    <string name="ok">OK</string>
+    <string name="remotes">Telecomandi</string>
+    <string name="saved_commands">Comandi salvati</string>
+    <string name="delete_command">Elimina comando</string>
+</resources>

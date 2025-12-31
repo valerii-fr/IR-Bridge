@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">Якая шкада!</string>
+    <string name="no_IR_sub">Паспрабуйце іншы тэлефон, у якім САПРАЎДЫ ЁСЦЬ ІЧ-перадатчык. На жаль, мы не можам загрузіць яго на вашу прыладу.</string>
+    <string name="stop_app">Закрыць праграму</string>
+    <string name="stop_app_insist">Працяг немагчымы</string>
+    <string name="stop_app_terminate">ЗАВЯРШЫЦЬ</string>
+</resources>

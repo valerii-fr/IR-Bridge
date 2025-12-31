@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">Wie schade!</string>
+    <string name="no_IR_sub">Versuchen Sie ein anderes Telefon, das tatsächlich einen IR-Sender HAT. Wir können ihn leider nicht auf Ihr Gerät hochladen.</string>
+    <string name="stop_app">App beenden</string>
+    <string name="stop_app_insist">Fortfahren nicht möglich</string>
+    <string name="stop_app_terminate">BEENDEN</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Abbrechen</string>
+    <string name="save">Speichern</string>
+    <string name="save_new_command">Neuen Befehl speichern</string>
+    <string name="name">Name</string>
+    <string name="description">Beschreibung</string>
+    <string name="received_packet">Empfangenes Paket</string>
+    <string name="time">Zeit</string>
+    <string name="durations">Dauern %s</string>
+    <string name="send_packet">Paket senden</string>
+    <string name="verify">Überprüfen Sie, ob der Befehl vom Zielgerät erkannt wird</string>
+    <string name="go">LOS</string>
+    <string name="save_command">Befehl speichern</string>
+    <string name="save_command_sub">Befehl zu dieser Fernbedienung speichern</string>
+    <string name="received">Empfangen</string>
+    <string name="clear_received">Empfangenen Paket-Cache leeren</string>
+    <string name="clear">Leeren</string>
+    <string name="choose_color">Farbe wählen</string>
+    <string name="add_remote">Fernbedienung hinzufügen</string>
+    <string name="edit_remote">%s bearbeiten</string>
+    <string name="save_err_no_commands">Speichern ohne Name oder Befehle nicht möglich</string>
+    <string name="awaiting_ir">Warte auf IR-Befehle</string>
+    <string name="searching_ble">Suche BLE IR-Empfänger…</string>
+    <string name="searching_ble_sub">BLE IR-Empfänger ist nicht verbunden, wird aber zum Abfangen von IR-Befehlen benötigt</string>
+    <string name="delete_remote">Fernbedienung löschen</string>
+    <string name="show_commands">Befehle anzeigen</string>
+    <string name="hide_commands">Befehle ausblenden</string>
+    <string name="delete_s_question">%s löschen?</string>
+    <string name="delete_s_question_sub">Diese Aktion kann nicht rückgängig gemacht werden!</string>
+    <string name="ok">OK</string>
+    <string name="remotes">Fernbedienungen</string>
+    <string name="saved_commands">Gespeicherte Befehle</string>
+    <string name="delete_command">Befehl löschen</string>
+</resources>

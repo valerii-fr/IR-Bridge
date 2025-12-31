@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">Яка шкода!</string>
+    <string name="no_IR_sub">Спробуйте інший телефон, у якому СПРАВДІ Є ІЧ-передавач. На жаль, ми не можемо завантажити його на ваш пристрій.</string>
+    <string name="stop_app">Закрити застосунок</string>
+    <string name="stop_app_insist">Продовження неможливе</string>
+    <string name="stop_app_terminate">ЗАВЕРШИТИ</string>
+</resources>

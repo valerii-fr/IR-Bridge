@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Salvar</string>
+    <string name="save_new_command">Salvar novo comando</string>
+    <string name="name">Nome</string>
+    <string name="description">Descrição</string>
+    <string name="received_packet">Pacote recebido</string>
+    <string name="time">Tempo</string>
+    <string name="durations">Durações %s</string>
+    <string name="send_packet">Enviar pacote</string>
+    <string name="verify">Verifique se o comando é reconhecido pelo dispositivo</string>
+    <string name="go">IR</string>
+    <string name="save_command">Salvar comando</string>
+    <string name="save_command_sub">Salvar comando neste controle remoto</string>
+    <string name="received">Recebido</string>
+    <string name="clear_received">Limpar cache de pacotes recebidos</string>
+    <string name="clear">Limpar</string>
+    <string name="choose_color">Escolher cor</string>
+    <string name="add_remote">Adicionar controle remoto</string>
+    <string name="edit_remote">Editar %s</string>
+    <string name="save_err_no_commands">Não é possível salvar sem nome ou comandos</string>
+    <string name="awaiting_ir">Aguardando comandos IR</string>
+    <string name="searching_ble">Procurando receptor IR BLE…</string>
+    <string name="searching_ble_sub">O receptor IR BLE não está conectado mas é necessário para interceptar comandos IR</string>
+    <string name="delete_remote">Excluir controle remoto</string>
+    <string name="show_commands">Mostrar comandos</string>
+    <string name="hide_commands">Ocultar comandos</string>
+    <string name="delete_s_question">Excluir %s?</string>
+    <string name="delete_s_question_sub">Esta ação não pode ser desfeita!</string>
+    <string name="ok">OK</string>
+    <string name="remotes">Controles remotos</string>
+    <string name="saved_commands">Comandos salvos</string>
+    <string name="delete_command">Excluir comando</string>
+</resources>

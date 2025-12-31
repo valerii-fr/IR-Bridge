@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="save_new_command">Save new command</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="received_packet">Received packet</string>
+    <string name="time">Time</string>
+    <string name="durations">Durations %s</string>
+    <string name="send_packet">Send packet</string>
+    <string name="verify">Verify the command is recognized by target</string>
+    <string name="go">GO</string>
+    <string name="save_command">Save command</string>
+    <string name="save_command_sub">Save command to this remote</string>
+    <string name="received">Received</string>
+    <string name="clear_received">Clear received packet cache</string>
+    <string name="clear">Clear</string>
+    <string name="choose_color">Choose color</string>
+    <string name="add_remote">Add remote</string>
+    <string name="edit_remote">Edit %s</string>
+    <string name="save_err_no_commands">Cannot save without name or commands</string>
+    <string name="awaiting_ir">Awaiting for IR commands</string>
+    <string name="searching_ble">Searching BLE IR receiver…</string>
+    <string name="searching_ble_sub">BLE IR receiver is not connected but it is required to be able to intercept IR commands</string>
+    <string name="delete_remote">Delete remote</string>
+    <string name="show_commands">Show commands</string>
+    <string name="hide_commands">Hide commands</string>
+    <string name="delete_s_question">Delete %s?</string>
+    <string name="delete_s_question_sub">This action cannot be undone!</string>
+    <string name="ok">OK</string>
+    <string name="remotes">Remotes</string>
+    <string name="saved_commands">Saved commands</string>
+    <string name="delete_command">Delete command</string>
+</resources>

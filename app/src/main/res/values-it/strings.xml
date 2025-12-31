@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">Che peccato!</string>
+    <string name="no_IR_sub">Prova un altro telefono che ABBIA un trasmettitore IR. Purtroppo non possiamo installarlo sul tuo dispositivo.</string>
+    <string name="stop_app">Chiudi applicazione</string>
+    <string name="stop_app_insist">Impossibile continuare</string>
+    <string name="stop_app_terminate">TERMINA</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">¡Qué lástima!</string>
+    <string name="no_IR_sub">Prueba con otro teléfono que SÍ TENGA transmisor infrarrojo. No podemos instalarlo en tu dispositivo.</string>
+    <string name="stop_app">Cerrar aplicación</string>
+    <string name="stop_app_insist">No es posible continuar</string>
+    <string name="stop_app_terminate">TERMINAR</string>
+</resources>

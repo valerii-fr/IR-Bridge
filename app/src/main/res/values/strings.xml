@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">What a pity!</string>
+    <string name="no_IR_sub">You may like to try another phone which actually DOES HAVE IR transmitter. Seriously, we cannot upload it to your device.</string>
+    <string name="stop_app">Stop application</string>
+    <string name="stop_app_insist">No way to continue</string>
+    <string name="stop_app_terminate">TERMINATE</string>
+</resources>

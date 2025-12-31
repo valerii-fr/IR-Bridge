@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Адмяніць</string>
+    <string name="save">Захаваць</string>
+    <string name="save_new_command">Захаваць новую каманду</string>
+    <string name="name">Назва</string>
+    <string name="description">Апісанне</string>
+    <string name="received_packet">Атрыманы пакет</string>
+    <string name="time">Час</string>
+    <string name="durations">Працягласці %s</string>
+    <string name="send_packet">Адправіць пакет</string>
+    <string name="verify">Праверце, што каманда распазнаецца мэтавай прыладай</string>
+    <string name="go">ПУСК</string>
+    <string name="save_command">Захаваць каманду</string>
+    <string name="save_command_sub">Захаваць каманду ў гэты пульт</string>
+    <string name="received">Атрымана</string>
+    <string name="clear_received">Ачысціць кэш атрыманых пакетаў</string>
+    <string name="clear">Ачысціць</string>
+    <string name="choose_color">Абраць колер</string>
+    <string name="add_remote">Дадаць пульт</string>
+    <string name="edit_remote">Рэдагаваць %s</string>
+    <string name="save_err_no_commands">Немагчыма захаваць без назвы або каманд</string>
+    <string name="awaiting_ir">Чаканне ІЧ-каманд</string>
+    <string name="searching_ble">Пошук BLE ІЧ-прымача…</string>
+    <string name="searching_ble_sub">BLE ІЧ-прымач не падключаны, але ён неабходны для перахопу ІЧ-каманд</string>
+    <string name="delete_remote">Выдаліць пульт</string>
+    <string name="show_commands">Паказаць каманды</string>
+    <string name="hide_commands">Схаваць каманды</string>
+    <string name="delete_s_question">Выдаліць %s?</string>
+    <string name="delete_s_question_sub">Гэта дзеянне нельга адмяніць!</string>
+    <string name="ok">ОК</string>
+    <string name="remotes">Пульты</string>
+    <string name="saved_commands">Захаваныя каманды</string>
+    <string name="delete_command">Выдаліць каманду</string>
+</resources>

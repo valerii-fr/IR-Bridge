@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Annuler</string>
+    <string name="save">Enregistrer</string>
+    <string name="save_new_command">Enregistrer nouvelle commande</string>
+    <string name="name">Nom</string>
+    <string name="description">Description</string>
+    <string name="received_packet">Paquet reçu</string>
+    <string name="time">Temps</string>
+    <string name="durations">Durées %s</string>
+    <string name="send_packet">Envoyer le paquet</string>
+    <string name="verify">Vérifiez que la commande est reconnue par la cible</string>
+    <string name="go">GO</string>
+    <string name="save_command">Enregistrer la commande</string>
+    <string name="save_command_sub">Enregistrer la commande dans cette télécommande</string>
+    <string name="received">Reçu</string>
+    <string name="clear_received">Vider le cache des paquets reçus</string>
+    <string name="clear">Vider</string>
+    <string name="choose_color">Choisir la couleur</string>
+    <string name="add_remote">Ajouter une télécommande</string>
+    <string name="edit_remote">Modifier %s</string>
+    <string name="save_err_no_commands">Impossible d\'enregistrer sans nom ou commandes</string>
+    <string name="awaiting_ir">En attente de commandes IR</string>
+    <string name="searching_ble">Recherche du récepteur IR BLE…</string>
+    <string name="searching_ble_sub">Le récepteur IR BLE n\'est pas connecté mais il est nécessaire pour intercepter les commandes IR</string>
+    <string name="delete_remote">Supprimer la télécommande</string>
+    <string name="show_commands">Afficher les commandes</string>
+    <string name="hide_commands">Masquer les commandes</string>
+    <string name="delete_s_question">Supprimer %s ?</string>
+    <string name="delete_s_question_sub">Cette action est irréversible !</string>
+    <string name="ok">OK</string>
+    <string name="remotes">Télécommandes</string>
+    <string name="saved_commands">Commandes enregistrées</string>
+    <string name="delete_command">Supprimer la commande</string>
+</resources>

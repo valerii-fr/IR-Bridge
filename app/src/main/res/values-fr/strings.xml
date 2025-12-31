@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">Quel dommage !</string>
+    <string name="no_IR_sub">Essayez un autre téléphone qui POSSÈDE un émetteur infrarouge. Nous ne pouvons malheureusement pas l\'installer sur votre appareil.</string>
+    <string name="stop_app">Fermer l\'application</string>
+    <string name="stop_app_insist">Impossible de continuer</string>
+    <string name="stop_app_terminate">TERMINER</string>
+</resources>

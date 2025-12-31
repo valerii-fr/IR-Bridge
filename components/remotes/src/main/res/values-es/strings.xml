@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="save_new_command">Guardar nuevo comando</string>
+    <string name="name">Nombre</string>
+    <string name="description">Descripción</string>
+    <string name="received_packet">Paquete recibido</string>
+    <string name="time">Tiempo</string>
+    <string name="durations">Duraciones %s</string>
+    <string name="send_packet">Enviar paquete</string>
+    <string name="verify">Verifica que el comando sea reconocido por el dispositivo</string>
+    <string name="go">IR</string>
+    <string name="save_command">Guardar comando</string>
+    <string name="save_command_sub">Guardar comando en este control remoto</string>
+    <string name="received">Recibido</string>
+    <string name="clear_received">Limpiar caché de paquetes recibidos</string>
+    <string name="clear">Limpiar</string>
+    <string name="choose_color">Elegir color</string>
+    <string name="add_remote">Añadir control remoto</string>
+    <string name="edit_remote">Editar %s</string>
+    <string name="save_err_no_commands">No se puede guardar sin nombre o comandos</string>
+    <string name="awaiting_ir">Esperando comandos IR</string>
+    <string name="searching_ble">Buscando receptor IR BLE…</string>
+    <string name="searching_ble_sub">El receptor IR BLE no está conectado pero es necesario para interceptar comandos IR</string>
+    <string name="delete_remote">Eliminar control remoto</string>
+    <string name="show_commands">Mostrar comandos</string>
+    <string name="hide_commands">Ocultar comandos</string>
+    <string name="delete_s_question">¿Eliminar %s?</string>
+    <string name="delete_s_question_sub">¡Esta acción no se puede deshacer!</string>
+    <string name="ok">OK</string>
+    <string name="remotes">Controles remotos</string>
+    <string name="saved_commands">Comandos guardados</string>
+    <string name="delete_command">Eliminar comando</string>
+</resources>

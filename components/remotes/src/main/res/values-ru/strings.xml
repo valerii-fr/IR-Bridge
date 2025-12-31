@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="save_new_command">Сохранить новую команду</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="received_packet">Полученный пакет</string>
+    <string name="time">Время</string>
+    <string name="durations">Длительности %s</string>
+    <string name="send_packet">Отправить пакет</string>
+    <string name="verify">Проверьте, что команда распознаётся целевым устройством</string>
+    <string name="go">ПУСК</string>
+    <string name="save_command">Сохранить команду</string>
+    <string name="save_command_sub">Сохранить команду в этот пульт</string>
+    <string name="received">Получено</string>
+    <string name="clear_received">Очистить кэш полученных пакетов</string>
+    <string name="clear">Очистить</string>
+    <string name="choose_color">Выбрать цвет</string>
+    <string name="add_remote">Добавить пульт</string>
+    <string name="edit_remote">Редактировать %s</string>
+    <string name="save_err_no_commands">Невозможно сохранить без названия или команд</string>
+    <string name="awaiting_ir">Ожидание ИК-команд</string>
+    <string name="searching_ble">Поиск BLE ИК-приёмника…</string>
+    <string name="searching_ble_sub">BLE ИК-приёмник не подключён, но он необходим для перехвата ИК-команд</string>
+    <string name="delete_remote">Удалить пульт</string>
+    <string name="show_commands">Показать команды</string>
+    <string name="hide_commands">Скрыть команды</string>
+    <string name="delete_s_question">Удалить %s?</string>
+    <string name="delete_s_question_sub">Это действие нельзя отменить!</string>
+    <string name="ok">ОК</string>
+    <string name="remotes">Пульты</string>
+    <string name="saved_commands">Сохранённые команды</string>
+    <string name="delete_command">Удалить команду</string>
+</resources>

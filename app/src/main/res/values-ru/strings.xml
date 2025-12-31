@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_IR_title">Какая досада!</string>
+    <string name="no_IR_sub">Попробуйте другой телефон, в котором ДЕЙСТВИТЕЛЬНО ЕСТЬ ИК-передатчик. К сожалению, мы не можем загрузить его на ваше устройство.</string>
+    <string name="stop_app">Закрыть приложение</string>
+    <string name="stop_app_insist">Никак нельзя продолжить. Совсем.</string>
+    <string name="stop_app_terminate">ЗАВЕРШИТЬ</string>
+</resources>
