@@ -26,7 +26,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavBackStackEntry
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import dev.nordix.irbridge.ble.model.BlePacketUi
@@ -42,8 +41,8 @@ import dev.nordix.irbridge.remotes.screens.add.model.RemoteAddEvent
 import dev.nordix.irbridge.remotes.screens.add.model.RemoteAddSideEffect
 import dev.nordix.irbridge.remotes.screens.add.model.RemoteAddState
 import dev.nordix.irbridge.remotes.screens.add.model.RemoteAddViewModel
-import dev.nordix.irbridge.remotes.screens.add.ui.RemoteAddPreviewDataProvider.mockCommands
-import dev.nordix.irbridge.remotes.screens.add.ui.RemoteAddPreviewDataProvider.mockDurations
+import dev.nordix.irbridge.remotes.commonUi.RemotePreviewDataProvider.mockCommands
+import dev.nordix.irbridge.remotes.commonUi.RemotePreviewDataProvider.mockDurations
 import dev.nordix.irbridge.remotes.commonUi.CommandsCard
 import dev.nordix.irbridge.remotes.screens.add.ui.composable.PacketCard
 import kotlinx.coroutines.flow.launchIn

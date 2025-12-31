@@ -1,13 +1,13 @@
-package dev.nordix.irbridge.remotes.screens.add.ui
+package dev.nordix.irbridge.remotes.commonUi
 
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import dev.nordix.irbridge.ble.model.BlePacketUi
 import dev.nordix.irbridge.common_ui.misc.ColorsProvider
 import dev.nordix.irbridge.core.utils.ID
+import dev.nordix.irbridge.remotes.domain.model.Remote
 import dev.nordix.irbridge.remotes.domain.model.RemoteCommand
 
-internal object RemoteAddPreviewDataProvider {
+internal object RemotePreviewDataProvider {
     val blePacketUi = BlePacketUi(
         tsMillis = System.currentTimeMillis(),
         durations = IntArray(40) { idx ->
@@ -19,9 +19,10 @@ internal object RemoteAddPreviewDataProvider {
         idx % 4
     }
 
+
     val mockCommands = List(4) { idx ->
         RemoteCommand(
-            id = ID.new(),
+            id = ID.Companion.new(),
             name = "Command $idx",
             description = "Description $idx",
             icon = null,
@@ -29,6 +30,15 @@ internal object RemoteAddPreviewDataProvider {
             durations = mockDurations.mapIndexed { idx, v ->
                 if (idx % 2 == 0) v else v * idx
             }.toIntArray()
+        )
+    }
+
+    val mockRemotes = List(4) { idx ->
+        Remote(
+            id = ID.Companion.new(),
+            name = "Remote $idx",
+            description = "Description $idx",
+            commands = mockCommands
         )
     }
 }

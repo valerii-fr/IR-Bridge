@@ -33,6 +33,7 @@ import dev.nordix.irbridge.common_ui.theme.paddings
 import dev.nordix.irbridge.common_ui.theme.spacers
 import dev.nordix.irbridge.core.utils.ID
 import dev.nordix.irbridge.remotes.R
+import dev.nordix.irbridge.remotes.commonUi.RemoteItem
 import dev.nordix.irbridge.remotes.domain.model.Remote
 import dev.nordix.irbridge.remotes.domain.model.RemoteCommand
 import dev.nordix.irbridge.remotes.screens.list.model.RemotesListEvent
@@ -72,10 +73,25 @@ internal fun RemotesListLayout(
                 remote = item,
                 onEditClick = { onEdit(item) },
                 onDeleteClick = {
-                    showConfirmDeleteDialog = item.name to { onEvent(RemotesListEvent.OnRemoteDeleteClicked(item)) }
+                    showConfirmDeleteDialog =
+                        item.name to { onEvent(RemotesListEvent.OnRemoteDeleteClicked(item)) }
                 },
-                onDeleteCommandClick = { onEvent(RemotesListEvent.OnRemoteCommandDeleteClicked(item, it)) },
-                onSendCommandClick = { onEvent(RemotesListEvent.OnRemoteCommandSendClicked(item, it)) },
+                onDeleteCommandClick = {
+                    onEvent(
+                        RemotesListEvent.OnRemoteCommandDeleteClicked(
+                            item,
+                            it
+                        )
+                    )
+                },
+                onSendCommandClick = {
+                    onEvent(
+                        RemotesListEvent.OnRemoteCommandSendClicked(
+                            item,
+                            it
+                        )
+                    )
+                },
             )
         }
     }

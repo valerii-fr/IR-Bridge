@@ -47,8 +47,8 @@ import dev.nordix.irbridge.core.utils.formatTime
 import dev.nordix.irbridge.remotes.R
 import dev.nordix.irbridge.remotes.commonUi.IrDurationsChart
 import dev.nordix.irbridge.remotes.domain.model.RemoteCommand
-import dev.nordix.irbridge.remotes.screens.add.ui.RemoteAddPreviewDataProvider.blePacketUi
-import dev.nordix.irbridge.remotes.screens.add.ui.RemoteAddPreviewDataProvider.mockDurations
+import dev.nordix.irbridge.remotes.commonUi.RemotePreviewDataProvider.blePacketUi
+import dev.nordix.irbridge.remotes.commonUi.RemotePreviewDataProvider.mockDurations
 
 @Composable
 internal fun PacketCard(

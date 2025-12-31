@@ -39,6 +39,9 @@ icons = "1.7.8"
 ## Destinations
 compose-destinations = "2.3.0"
 
+## Widget
+glance = "1.1.1"
+
 [libraries]
 ## Gradle
 android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "agp" }
@@ -94,6 +97,10 @@ material-icons-extended = { module = "androidx.compose.material:material-icons-e
 compose-destinations = { module = "io.github.raamcosta.compose-destinations:core", version.ref = "compose-destinations" }
 compose-destinations-ksp = { module = "io.github.raamcosta.compose-destinations:ksp", version.ref = "compose-destinations" }
 
+## Widget
+androidx-glance = { module = "androidx.glance:glance", version.ref = "glance" }
+androidx-glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
+
 [plugins]
 ## Core
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -127,4 +134,8 @@ room = [
     "sqlight-bundled",
     "androidx-room-compiler",
     "androidx-room-runtime",
+]
+glance = [
+    "androidx-glance",
+    "androidx-glance-appwidget"
 ]

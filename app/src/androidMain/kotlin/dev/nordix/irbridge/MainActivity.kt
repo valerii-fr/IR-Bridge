@@ -15,6 +15,7 @@ import dev.nordix.irbridge.ble.data.PermissionsHelper
 import dev.nordix.irbridge.common_ui.card.common.RDCardView
 import dev.nordix.irbridge.common_ui.theme.IRTheme
 import dev.nordix.irbridge.common_ui.theme.paddings
+import dev.nordix.irbridge.feature.widget.domain.WidgetUpdateBridge
 import dev.nordix.irbridge.ir.domain.IrTransmitter
 import dev.nordix.irbridge.remotes.nav.RemotesScreenNav
 import org.koin.android.ext.android.inject
@@ -64,6 +65,12 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         permissionHelper.checkBlePermissionsIfNeeded()
+        WidgetUpdateBridge.requestUpdate(this)
+    }
+
+    override fun onStop() {
+        WidgetUpdateBridge.requestUpdate(this)
+        super.onStop()
     }
 
 }

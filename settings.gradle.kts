@@ -38,3 +38,4 @@ include(":components:ir")
 include(":components:remotes")
 
 include(":feature:remotes")
+include(":feature:widget")

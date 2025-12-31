@@ -58,6 +58,7 @@ kotlin {
             implementation(project(":components:remotes"))
             
             implementation(project(":feature:remotes"))
+            implementation(project(":feature:widget"))
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)

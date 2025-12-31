@@ -28,7 +28,7 @@ import dev.nordix.irbridge.common_ui.theme.IRTheme
 import dev.nordix.irbridge.common_ui.theme.paddings
 import dev.nordix.irbridge.remotes.R
 import dev.nordix.irbridge.remotes.domain.model.RemoteCommand
-import dev.nordix.irbridge.remotes.screens.add.ui.RemoteAddPreviewDataProvider.mockCommands
+import dev.nordix.irbridge.remotes.commonUi.RemotePreviewDataProvider.mockCommands
 
 @Composable
 internal fun CommandsCard(
