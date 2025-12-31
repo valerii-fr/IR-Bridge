@@ -4,7 +4,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Download
+import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Upload
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -15,7 +18,10 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.ramcosta.composedestinations.annotation.Destination
@@ -40,6 +46,7 @@ fun RemotesListScreen(
     val viewModel = koinViewModel<RemotesListScreenViewModel>()
     val state by viewModel.state.collectAsState()
     val coroutineScope = rememberCoroutineScope()
+    var showExportMenu by remember { mutableStateOf(false) }
 
 
     val backupCallbacks = rememberBackupCallbacks(
@@ -65,20 +72,44 @@ fun RemotesListScreen(
                 title = { Text(stringResource(R.string.remotes)) },
                 actions = {
                     IconButton(
-                        onClick = backupCallbacks.onExportClick
+                        onClick = { showExportMenu = !showExportMenu }
                     ) {
                         Icon(
-                            imageVector = Icons.Default.Upload,
-                            contentDescription = stringResource(R.string.export)
+                            imageVector = Icons.Default.MoreVert,
+                            contentDescription = null
                         )
                     }
 
-                    IconButton(
-                        onClick = backupCallbacks.onImportClick
+                    DropdownMenu(
+                        expanded = showExportMenu,
+                        onDismissRequest = { showExportMenu = false }
                     ) {
-                        Icon(
-                            imageVector = Icons.Default.Download,
-                            contentDescription = stringResource(R.string.import_db)
+                        DropdownMenuItem(
+                            text = { Text(stringResource(R.string.export)) },
+                            onClick = {
+                                showExportMenu = false
+                                backupCallbacks.onExportClick()
+                            },
+                            trailingIcon = {
+                                Icon(
+                                    imageVector = Icons.Default.Upload,
+                                    contentDescription = null
+                                )
+                            }
+                        )
+
+                        DropdownMenuItem(
+                            text = { Text(stringResource(R.string.import_db)) },
+                            onClick = {
+                                showExportMenu = false
+                                backupCallbacks.onImportClick()
+                            },
+                            trailingIcon = {
+                                Icon(
+                                    imageVector = Icons.Default.Download,
+                                    contentDescription = null
+                                    )
+                            }
                         )
                     }
                 }

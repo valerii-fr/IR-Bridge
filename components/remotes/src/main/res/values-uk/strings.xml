@@ -33,4 +33,6 @@
     <string name="saved_commands">Збережені команди</string>
     <string name="delete_command">Видалити команду</string>
     <string name="show_in_widget">Показати у віджеті</string>
+    <string name="export">Експорт бази даних</string>
+    <string name="import_db">Імпорт бази даних</string>
 </resources>

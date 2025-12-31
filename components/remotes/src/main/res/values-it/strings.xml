@@ -33,4 +33,6 @@
     <string name="saved_commands">Comandi salvati</string>
     <string name="delete_command">Elimina comando</string>
     <string name="show_in_widget">Mostra nel widget</string>
+    <string name="export">Esporta database</string>
+    <string name="import_db">Importa database</string>
 </resources>

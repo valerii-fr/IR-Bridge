@@ -33,4 +33,6 @@
     <string name="saved_commands">Gespeicherte Befehle</string>
     <string name="delete_command">Befehl löschen</string>
     <string name="show_in_widget">Im Widget anzeigen</string>
+    <string name="export">Datenbank exportieren</string>
+    <string name="import_db">Datenbank importieren</string>
 </resources>
