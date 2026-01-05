@@ -65,7 +65,6 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         permissionHelper.checkBlePermissionsIfNeeded()
-        WidgetUpdateBridge.requestUpdate(this)
     }
 
     override fun onStop() {

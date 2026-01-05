@@ -19,11 +19,23 @@ val appVersionCode = major * 100000 + minor * 10000 + patch
 gradle.extra["appVersionName"] = appVersionName
 gradle.extra["appVersionCode"] = appVersionCode
 
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        file.inputStream().use { load(it) }
+    }
+}
+
+fun localProp(name: String): String =
+    localProperties.getProperty(name)
+        ?: error("Missing property '$name' in local.properties")
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.androidx.baselineprofile)
     id("org.jetbrains.kotlin.plugin.serialization") version "2.3.0"
 }
 
@@ -89,9 +101,25 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
+
+    signingConfigs {
+        create("release") {
+            keyAlias = localProp("ANDROID_KEY_ALIAS")
+            keyPassword = localProp("ANDROID_KEY_PASSWORD")
+            storePassword = localProp("ANDROID_STORE_PASSWORD")
+            storeFile = file(localProp("ANDROID_STORE_PATH"))
+        }
+    }
+
+    buildTypes {
+        getByName("release") {
+            signingConfig = signingConfigs.getByName("release")
+        }
+    }
+
 }
 
 android.applicationVariants.all {
@@ -105,7 +133,9 @@ android.applicationVariants.all {
 }
 
 dependencies {
+    implementation(libs.androidx.profileinstaller)
     debugImplementation(compose.uiTooling)
+    baselineProfile(project(":baselineprofile"))
 }
 
 configurations.all {

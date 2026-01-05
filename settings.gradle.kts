@@ -40,3 +40,4 @@ include(":components:export")
 
 include(":feature:remotes")
 include(":feature:widget")
+include(":baselineprofile")
